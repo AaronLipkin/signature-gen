@@ -3,10 +3,18 @@ body {
 	margin: 0px;
 }
 
+.header-h1 {
+	padding-top: 30px;
+	border-bottom: 1px solid black;
+	height: 60px;
+	text-align: center;
+	margin: 0px;
+}
+
 #main {
 	display: flex;
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 90px);
 }
 
 #signature-info {
@@ -20,11 +28,28 @@ body {
 	border-right: 1px solid black;
 }
 
-#signature-preview {
+.right-side {
 	width: 50%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+}
+
+.right-side h1 {
+	width: 100%;
+	text-align: center;
+	margin-top: 30%;
+	margin-bottom: 50px;
+}
+
+.right-side h1:after {
+	display: block;
+	content: '';
+	height: 4px;
+	background: black;
+	width: 100px;
+	margin: 0 auto;
+}
+
+#signature {
+	margin: 0 auto;
 }
 
 .input-label-group {

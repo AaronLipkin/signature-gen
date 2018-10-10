@@ -11,9 +11,11 @@
 	<script type="text/javascript" src="app.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<title>Signature Creator</title>
+	<link rel="shortcut icon" href="http://sparxoo.com/wp-content/uploads/2018/09/Sparxoo-logo.png">
+	<title>Signature Generator</title>
 </head>
 <body ng-controller="mainController as main" ng-cloak>
+	<h1 class="header-h1">SPP Email Signature Generator</h1>
 	<div id="main">
 
 		<form id="signature-info" ng-submit="main.submit()">
@@ -63,71 +65,74 @@
 		</div>
 
 	</div> -->
-	<div id="signature-preview">
+	<div class="right-side">
+		<h1>Preview</h1>
+		<div id="signature-preview">
 
-		<table id="signature"  style="font-family: 'Helvetica">
-			<tr>
-				<td style="text-align: center; border-right: 1px solid black; padding: 0px">
-					<br>
-					<img src="https://i.imgur.com/XweXPH5.png" width="60"><br>
-					<img src="https://i.imgur.com/n1ApUf0.png" width="140">
-				</td>
-				<td style="padding:0px 10px;">
-					<table>
-						<tr style="height: 25px;  padding-bottom: 0px;">
-							<td style="height: 25px;  padding-bottom: 0px;">
-								<div><b style="font-size: 25px; height: 28px; display: block; padding-bottom: 0px;">{{main.name || 'Your Name'}}</b></div>
-							</td>
-						</tr>
-						<tr style="height: 15px; padding-top: 0px;">
-							<td style="height: 15px;">
-								<div style="font-size: 12px; color: #808080; height: 15px;">{{main.title || 'Your Title'}}</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="padding-top: 5px;"></div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="font-size: 10px; height: 10px;"><b>Strategic Property Partners, LLC</b></div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="font-size: 10px;  height: 10px;">401 E Jackson St, 33rd Floor</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="font-size: 10px; height: 10px;">Tampa, FL 33602</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="height: 10px;"></div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="font-size: 10px; height: 10px;">Office: <span style="color:#808080;">{{main.office || '813.123.45610'}}</span></div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="font-size: 10px; height: 10px;">Mobile: <span style="color:#808080;">{{main.mobile || '813.123.45610'}}</span></div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div style="font-size: 10px; height: 18px;">Website: <span style="color:#808080;"><a href="www.waterstreettampa.com">www.waterstreettampa.com</a></span></div>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
+			<table id="signature"  style="font-family: 'Helvetica';">
+				<tr>
+					<td style="text-align: center; border-right: 1px solid black; padding: 0px">
+						<br>
+						<img src="https://i.imgur.com/XweXPH5.png" width="60"><br>
+						<img src="https://i.imgur.com/n1ApUf0.png" width="140">
+					</td>
+					<td style="padding:0px 10px;">
+						<table>
+							<tr style="height: 25px;  padding-bottom: 0px;">
+								<td style="height: 25px;  padding-bottom: 0px;">
+									<div><b style="font-size: 25px; height: 28px; display: block; padding-bottom: 0px;">{{main.name || 'Your Name'}}</b></div>
+								</td>
+							</tr>
+							<tr style="height: 15px; padding-top: 0px;">
+								<td style="height: 15px;">
+									<div style="font-size: 12px; color: #808080; height: 15px;">{{main.title || 'Your Title'}}</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="padding-top: 5px;"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="font-size: 10px; height: 10px;"><b>Strategic Property Partners, LLC</b></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="font-size: 10px;  height: 10px;">401 E Jackson St, 33rd Floor</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="font-size: 10px; height: 10px;">Tampa, FL 33602</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="height: 10px;"></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="font-size: 10px; height: 10px;">Office: <span style="color:#808080;">{{main.office || '813.123.4567'}}</span></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="font-size: 10px; height: 10px;">Mobile: <span style="color:#808080;">{{main.mobile || '813.123.4567'}}</span></div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="font-size: 10px; height: 18px;">Website: <span style="color:#808080;"><a href="www.waterstreettampa.com">www.waterstreettampa.com</a></span></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 <!-- 	<div class="code-modal">
 		<div class="code-modal-inner">
